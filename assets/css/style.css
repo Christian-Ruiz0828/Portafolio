@@ -1,0 +1,159 @@
+@import url(../css/loader.css);
+
+
+body{
+    background-color: rgb(24, 23, 23);
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: aqua;
+}
+
+
+header{
+    display: flex;
+    background-color: white;
+    min-height: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo{
+    display: flex;
+    padding-left: 30px ;
+    align-items: center;
+}
+
+nav{
+    font-size: 20px;
+    padding-right: 50px;
+    align-items: center;
+}
+
+.logo img{
+    height: 30px;
+}
+
+.contenedor-menu{
+    display: none;
+    justify-content: right;
+    width: 100%;
+    height: 70;
+}
+
+.bars__menu{
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.bars__menu span {
+    display: none;
+    width: 100%;
+    height: 2px;
+    background: #9A00BF;
+    margin-top: 6px;
+    transform-origin: 0px 100%;
+    transition: all 300ms;
+}
+
+.activeline1__bars-menu{
+    display: none;
+    transform: rotate(45deg) translate(-2px, 1px); 
+}
+
+.activeline2__bars-menu{
+    display: none;
+    opacity: 0;
+    margin-left: -30px; 
+}
+
+.activeline3__bars-menu{
+    display: none;
+    transform: rotate(-45deg) translate(-4px, 2px);
+}
+
+@media screen and (max-width: 952px){
+    .logo{
+        font-size: 15px;
+        padding-left: 10px;
+    }
+
+    nav{
+        font-size: 15px;
+        padding-right:10px ;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    nav{
+        display: none;
+    }
+    .contenedor-menu{
+        display: flex;
+        width: 100%;
+        height: 70px;
+        background-color: red;
+    }
+
+    .bars__menu{
+        display: flex;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background-color: green;
+        cursor: pointer;
+    }
+
+
+}
+
+/* Menu hambugesa hasta la linea 42*/
+
+/*
+
+.contenedor-menu{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    height: 70;
+}
+
+.bars__menu{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.bars__menu span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #9A00BF;
+    margin-top: 6px;
+    transform-origin: 0px 100%;
+    transition: all 300ms;
+}
+
+.activeline1__bars-menu{
+    transform: rotate(45deg) translate(-2px, 1px); 
+}
+
+.activeline2__bars-menu{
+    opacity: 0;
+    margin-left: -30px; 
+}
+
+.activeline3__bars-menu{
+    transform: rotate(-45deg) translate(-4px, 2px);
+}
+*/
