@@ -1,0 +1,55 @@
+.button-nav:hover{
+    color: aqua;
+    cursor: pointer;
+}
+
+
+header{
+    display: flex;
+    background-color: white;
+    min-height: 60px;
+    justify-content: space-around;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+
+.Logo-container{
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+.button-nav{
+    font-size: 25px;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 4px;
+}
+
+@media (max-width: 480px){
+    header{
+        width: 480px;
+        height: 70px;
+    }
+
+    .Logo-container{
+        font-size: 15px;
+    }
+
+    .button-nav{
+        font-size: 25px;
+        border-radius: 10px;
+        margin: 2px;
+        padding: 2px;
+    }
+
+
+}
+
+
+
